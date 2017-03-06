@@ -1,0 +1,9 @@
+---
+# This playbook deploys a simple standalone Tomcat 7 with JDK 8
+
+- name: tomcat-server
+  hosts: tomcat-servers
+  become: True
+
+  roles:  
+    - { role: tomcat7}
